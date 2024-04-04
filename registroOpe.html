@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Operaciones</title>
+    <link rel="stylesheet" href="./css/stylesRegOpe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="div-titulo">
+        <h1>Registro de Operaciones</h1>
+        <button id="backButton" onclick="regresar()"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+
+    <button id="vaciarRegistros" onclick="vaciarRegistros()">Vaciar Registros</button>
+    
+    <div class="contenedor">
+        <div class="div-formulario">
+            <h2>Formulario</h2>
+            <form action="" id="formulario">
+                <input type="date" id="fecha" placeholder="Ingresa la fecha">
+                <input type="text" id="transporte" placeholder="Ingresa el transporte">
+                <input type="text" id="placa" placeholder="Ingresa la placa">
+                <input type="text" id="tipoVeh" placeholder="Ingresa el tipo de vehiculo">
+                <input type="text" id="operacion" placeholder="Ingresa la operacion">
+                <input type="text" id="tarifa" placeholder="Ingresa la tarifa">
+                <input type="text" id="transportadora" placeholder="Ingresa la transportadora">
+                <input type="text" id="nomCond" placeholder="Ingresa el nombre del conductor">
+                <input type="text" id="cedula" placeholder="Ingresa la cedula">
+                <button type="submit" id="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+        <div class="div-listado">
+            <h2>Listado de Registros</h2>
+            <div class="div-registro" id="contenido">
+                <!-- Tabla para mostrar los registros -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Transporte</th>
+                            <th>Placa</th>
+                            <th>Tipo de Vehículo</th>
+                            <th>Operación</th>
+                            <th>Tarifa</th>
+                            <th>Transportadora</th>
+                            <th>Nombre del Conductor</th>
+                            <th>Cédula</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaRegistrosBody">
+
+                    </tbody>
+                </table>
+            </div>
+            <!--<button id="guardarPDF">Guardar en PDF</button>-->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="./js/scriptRegOpe.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+</body>
+</html>

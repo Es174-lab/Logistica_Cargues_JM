@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+.div-titulo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-titulo h1 {
+    font-weight: 300;
+    color: white;
+}
+
+.contenedor {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+#backButton {
+    background-color: rgba(70, 70, 215, 0.484);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#backButton i {
+    margin-right: 5px;
+}
+/*ESTILO FORMULARIO*/
+.contenedor .div-formulario {
+    width: 30%;
+    height: 560px;
+    margin: 10px 10px;
+    background-color: rgb(65, 88, 114);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.6);
+}
+
+.contenedor .div-formulario h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.contenedor .div-formulario form {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor .div-formulario form input, 
+.contenedor .div-formulario form button {
+    width: 99%;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+
+/*ESTILO DE LISTADO*/
+.contenedor .div-listado {
+    width: 55%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    background-color: rgb(135, 132, 132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.contenedor .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.contenedor .div-listado .div-registro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.contenedor .div-listado .div-registro p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.div-listado button {
+    width: 99%;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+}
+
+/* ESTILO DE LA TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd; 
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+td.actions {
+    text-align: center;
+}
+
+th:first-child {
+    border-top: none;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#vaciarRegistros {
+    background-color:  rgba(70, 70, 215, 0.484); 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+#vaciarRegistros:hover {
+    background-color: #d32f2f; 
+}

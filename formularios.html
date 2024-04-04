@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesForm.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario de Registro e Inicio de Sesion</title>
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesiòn con tus datos</p>
+                <input type="button" value="Iniciar Sesiòn" id="sign-in">
+            </div>
+        </div>
+    
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+                <p>O usa tu email para registrarte</p>
+                <form class="form" action="register.php" method="post">
+                    <!-- Campos del formulario existentes -->
+                    <label>
+                        <i class='bx bx-user' ></i>
+                        <input type="text" name="fullName" placeholder="Nombre Completo" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" name="email" placeholder="example@astk.com" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡¡Bienvenido Nuevamente!!</h2>
+                <p>Si aùn no tienes una cuenta por favor registrese aquì</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+    
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesiòn</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                </div>
+                <p>O iniciar sesiòn con una cuenta</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="example@astk.com">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input id="inicio" type="submit" value="Iniciar Sesiòn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/scriptForms.js"></script>
+</html>

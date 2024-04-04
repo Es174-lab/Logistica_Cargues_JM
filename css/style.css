@@ -1,0 +1,155 @@
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.descripcion {
+    flex: 1; 
+    padding: 20px; 
+    font-family: Arial, sans-serif;
+}
+
+.descripcion p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.descripcion input[type="submit"]{
+    background-color: #9191bd;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.descripcion input[type="submit"]:hover{
+    background-color: #7a7a9a;
+}
+
+.imagen {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.imagen img {
+    width: 700px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1.0);
+}
+
+.tarjetas {
+    text-align: center; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+  
+h3 {
+    margin-top: 24px; 
+    margin-bottom: 20px;
+    text-align: center; 
+    color: rgb(49, 67, 129);
+}
+  
+.card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+  
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+  
+.card p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card input[type="submit"]{
+    background-color: #9191bd;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.card input[type="submit"]:hover{
+    background-color: #7a7a9a;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; 
+}

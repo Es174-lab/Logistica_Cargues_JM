@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Estilos para el contenedor del servicio al cliente */
+.servicio-cliente {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.servicio-cliente i {
+    font-size: 6vw;
+    color: #007bff;
+    margin-bottom: 5%;
+}
+
+.servicio-cliente h3 {
+    margin-bottom: 2%; 
+    font-size: 3vw; 
+    color: #022b57;
+    text-align: center;
+}
+
+.servicio-cliente h4 {
+    margin-bottom: 2%; 
+    text-align: center;
+}
+
+/* Estilos para el contenedor del camión */
+.camion {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-left: 20px; 
+}
+
+.camion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}

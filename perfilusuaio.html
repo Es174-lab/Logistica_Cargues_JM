@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesPerfil.css">
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./Imagenes/administradora.jpeg" alt="Foto de perfil" id="profileImg" class="profile-picture">
+        <button class="button" onclick="openImageUploadForm()">Cambiar imagen</button>
+        <h1 id="username">Nombre de Usuario</h1>
+        <div class="user-info">
+            <p id="email">Correo electrónico: usuario@example.com</p>
+            <p id="fechaNacimiento">Fecha de nacimiento: 01/01/1990</p>
+            <p id="ciudad">Ciudad: Ciudad de Ejemplo</p>
+            <p id="cargo">Cargo: Ciudad de Ejemplo</p>
+            <p id="telefono">Teléfono: Ciudad de Ejemplo</p>
+        </div>
+        <button class="button" onclick="openEditForm()">Editar perfil</button>
+    </div>
+
+    <div id="editForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditForm()">&times;</span>
+            <form id="editProfileForm">
+                <label for="newName">Nuevo Nombre de Usuario:</label><br>
+                <input type="text" id="newName" name="newName" required><br>
+                <label for="newEmail">Nuevo Correo Electrónico:</label><br>
+                <input type="email" id="newEmail" name="newEmail" required><br>
+                <label for="newDateOfBirth">Nueva Fecha de Nacimiento:</label><br>
+                <input type="text" id="newDateOfBirth" name="newDateOfBirth" required><br>
+                <label for="newCity">Nueva Ciudad:</label><br>
+                <input type="text" id="newCity" name="newCity" required><br>
+                <label for="newPosition">Nuevo Cargo:</label><br>
+                <input type="text" id="newPosition" name="newPosition" required><br>
+                <label for="newPhone">Nuevo Teléfono:</label><br>
+                <input type="text" id="newPhone" name="newPhone" required><br><br>
+                <button class="button" onclick="saveChange()">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>    
+    <script src="/js/scriptPerfilUser.js"></script>
+
+    <!-- Aquí puedes agregar el input para cargar la imagen -->
+    <input type="file" id="newImage" style="display: none;">
+</body>
+</html>

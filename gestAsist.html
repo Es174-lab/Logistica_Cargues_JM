@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesAsist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Gestor de Asistencia</title>
+</head>
+<body>
+    <div class="div-titulo">
+        <h1>Gestor de Asistencia</h1>
+        <button id="backButton" onclick="regresar()"><i class="fas fa-arrow-left"></i> Volver</button>
+    </div>
+    
+        <div class="container">
+            <form id="attendanceForm">
+                <label for="employeeName">Nombre del Empleado:</label>
+                <input type="text" id="employeeName" required>
+
+                <label for="entryTime">Hora de Entrada:</label>
+                <input type="time" id="entryTime" required>
+
+                <label for="exitTime">Hora de Salida:</label>
+                <input type="time" id="exitTime" required>
+
+                <label for="attendanceStatus">Estado de Asistencia:</label>
+                <select id="attendanceStatus" required>
+                    <option value="presente">Presente</option>
+                    <option value="ausente">Ausente</option>
+                </select>
+
+                <button type="button" onclick="registrarAsistencia()">Registrar Asistencia</button>
+            </form>
+
+            <div id="attendanceList">
+                <h2>Lista de Asistencias Registradas</h2>
+               <!--<button onclick="guardarPDF()">Guardar en PDF</button>-->
+                <div id="pdfContent">
+                    <table id="attendanceTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Hora de Entrada</th>
+                                <th>Hora de Salida</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="./js/scriptGestAsis.js"></script>
+</body>
+</html>

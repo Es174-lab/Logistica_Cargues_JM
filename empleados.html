@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/stylesEmp.css">
+</head>
+<body>
+
+    <h2>LISTA DE EMPLEADOS</h2>
+
+    <input type="text" id="searchInput" placeholder="Buscar empleado..." onkeyup="filterTable()">
+
+    <div class="button-container">
+        <button id="backButton" onclick="regresar()"><i class="fas fa-arrow-left"></i> Volver</button>
+        <button id="addButton" onclick="agregarEmpleado()">Agregar Empleado</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AGUDELO VASQUEZ IVAN</td>       
+            </tr>
+            <tr>
+                <td>CADAVID VANEGAS ROBERTO</td>   
+            </tr>
+            <tr>
+                <td>CARVAJAL ESCALANTE JOHAN SEBASTIAN</td>     
+            </tr>
+            <tr>
+                <td>FLOREZ QUINTERO SARGEY MANUEL</td>    
+            </tr>
+            <tr>
+                <td>GIRALDO VARGAS JUAN CAMILO</td>      
+            </tr>
+            <tr>
+                <td>HERNANDEZ GOMEZ JOHANDER JOSE</td>      
+            </tr>
+            <tr>
+                <td>ISAZA GIOVANNY ARLEY</td>  
+            </tr>
+            <tr>
+                <td>JIMENEZ ALVAREZ LUIS ALFONSO</td>    
+            </tr>
+            <tr>
+                <td>LOAIZA ZULETA JANIER YAIRTON</td>       
+            </tr>
+            <tr>
+                <td>LONDOÑO ESCALANTE JUAN MANUEL</td>      
+            </tr>
+            <tr>
+                <td>MENA CUESTA PABLO ALIRIO</td>      
+            </tr>
+            <tr>
+                <td>MORALES CASTRILLON NESTOR ADAN</td>    
+            </tr>
+            <tr>
+                <td>ORTEGA RAMIREZ RICHARD</td>      
+            </tr>
+            <tr>
+                <td>PALACIOS ZAPATA ALEJANDRO</td>    
+            </tr>
+            <tr>
+                <td>QUIROZ CORREA KEVIN ALEXANDER</td>  
+            </tr>
+            <tr>
+                <td>RESTREPO JIMENEZ JAMES ANDRES</td>    
+            </tr>
+            <tr>
+                <td>SANCHEZ ALVAREZ JHOAN</td>   
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script src="./js/scriptEmp.js"></script>
+</body>
+
+<div class="modal" id="employeeModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Datos personales</h2>
+        <p id="employeeData"></p>
+    </div>
+</div>
+</html>
